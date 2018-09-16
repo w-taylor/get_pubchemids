@@ -44,7 +44,7 @@ def add_to_output(d,pid):
         writer.writerow([d, pid])
     return
 
-with open('bottom_5%_mergedscore.csv') as csv_file:
+with open('input.csv') as csv_file:
     # open csv file with only drug names in a single column, no header info
     csv_reader = csv.reader(csv_file, delimiter=',')
     druglist = []
